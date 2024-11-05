@@ -1,0 +1,32 @@
+﻿@model Jogo
+
+<div class="container">
+    <div class="row">
+        <div class="card">
+
+            <div class="text-center">
+                <img src="@Model.ImagemUrl" class="img-fluid" width="400px" alt="@Model.Nome">
+            </div>
+
+            <div class="card-block">
+                <h3 class="card-title">@Model.Nome</h3>
+                <p class="card-text">@Model.DescricaoDetalhada</p>
+
+                <p class=" align-content-lg-end">
+                    <a class="btn btn-info"
+                       asp-controller="Jogo"
+                       asp-action="List">
+                        Ver todos os jogos
+                    </a>
+
+                    <a class="btn btn-primary"
+                       asp-controller="CarrinhoCompra"
+                       asp-action="AdicionarItemNoCarrinhoCompra"
+                       asp-route-JogoId="@Model.Id">
+                        Adicionar @Model.Nome no Carrinho
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DEV\\repos\\Loja\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\viewmodels\\carrinhocompraviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\viewmodels\\carrinhocompraviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\models\\carrinhocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\models\\carrinhocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\controllers\\carrinhocompracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\controllers\\carrinhocompracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\models\\carrinhocompraitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\models\\carrinhocompraitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\views\\shared\\_jogosresumo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\views\\shared\\_jogosresumo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\views\\jogo\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\views\\jogo\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|d:\\dev\\repos\\loja\\loja\\controllers\\jogocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B93A26-138F-4A8C-AF60-C758D8EB157F}|Loja\\Loja.csproj|solutionrelative:loja\\controllers\\jogocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarrinhoCompraItem.cs",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\Models\\CarrinhoCompraItem.cs",
+              "RelativeDocumentMoniker": "Loja\\Models\\CarrinhoCompraItem.cs",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\Models\\CarrinhoCompraItem.cs",
+              "RelativeToolTip": "Loja\\Models\\CarrinhoCompraItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:38:17.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarrinhoCompra.cs",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\Models\\CarrinhoCompra.cs",
+              "RelativeDocumentMoniker": "Loja\\Models\\CarrinhoCompra.cs",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\Models\\CarrinhoCompra.cs",
+              "RelativeToolTip": "Loja\\Models\\CarrinhoCompra.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAswGoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:31:26.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarrinhoCompraController.cs",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\Controllers\\CarrinhoCompraController.cs",
+              "RelativeDocumentMoniker": "Loja\\Controllers\\CarrinhoCompraController.cs",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\Controllers\\CarrinhoCompraController.cs",
+              "RelativeToolTip": "Loja\\Controllers\\CarrinhoCompraController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwCoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:30:53.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarrinhoCompraViewModel.cs",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\ViewModels\\CarrinhoCompraViewModel.cs",
+              "RelativeDocumentMoniker": "Loja\\ViewModels\\CarrinhoCompraViewModel.cs",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\ViewModels\\CarrinhoCompraViewModel.cs",
+              "RelativeToolTip": "Loja\\ViewModels\\CarrinhoCompraViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:31:21.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\Views\\Jogo\\Details.cshtml",
+              "RelativeDocumentMoniker": "Loja\\Views\\Jogo\\Details.cshtml",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\Views\\Jogo\\Details.cshtml",
+              "RelativeToolTip": "Loja\\Views\\Jogo\\Details.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T23:58:44.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_JogosResumo.cshtml",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\Views\\Shared\\_JogosResumo.cshtml",
+              "RelativeDocumentMoniker": "Loja\\Views\\Shared\\_JogosResumo.cshtml",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\Views\\Shared\\_JogosResumo.cshtml",
+              "RelativeToolTip": "Loja\\Views\\Shared\\_JogosResumo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T23:46:04.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JogoController.cs",
+              "DocumentMoniker": "D:\\DEV\\repos\\Loja\\Loja\\Controllers\\JogoController.cs",
+              "RelativeDocumentMoniker": "Loja\\Controllers\\JogoController.cs",
+              "ToolTip": "D:\\DEV\\repos\\Loja\\Loja\\Controllers\\JogoController.cs",
+              "RelativeToolTip": "Loja\\Controllers\\JogoController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:48:52.35Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

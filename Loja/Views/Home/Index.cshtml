@@ -1,0 +1,10 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel"/>
+
+<div class="row">
+    @foreach(var jogo in Model.JogosPreferidos)
+    {
+        <partial name="_JogosResumo" for="@jogo" />
+    }
+</div>
