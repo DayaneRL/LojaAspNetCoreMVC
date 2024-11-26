@@ -49,5 +49,38 @@ namespace Loja.Controllers
                 .FirstOrDefault(j => j.Id == JogoId);
             return View(jogo);
         }
+
+        public ViewResult Search(string searchString)
+        {
+            IEnumerable<Jogo> jogos;
+            string categoriaAtual = string.Empty;
+
+            if(string.IsNullOrEmpty(searchString))
+            {
+                jogos = _jogoRepository.Jogos.OrderBy(j => j.Id);
+                categoriaAtual = "Todos os lanches";
+            }
+            else
+            {
+                jogos = _jogoRepository.Jogos
+                    .Where(j => j.Nome.ToLower().Contains(searchString.ToLower()))
+                    .OrderBy(j => j.Id);
+
+                if (jogos.Any())
+                {
+                    categoriaAtual = "Jogos";
+                }
+                else
+                {
+                    categoriaAtual = "Nenhum jogo foi encontrado";
+                }
+            }
+
+            return View("~/Views/Jogo/List.cshtml", new JogoListViewModel
+            {
+                Jogos = jogos,
+                CategoriaAtual=categoriaAtual,
+            });
+        }
     }
 }

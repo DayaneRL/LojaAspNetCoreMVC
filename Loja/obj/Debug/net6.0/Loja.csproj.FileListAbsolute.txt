@@ -277,3 +277,4 @@ D:\DEV\repos\Loja\Loja\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\DEV\repos\Loja\Loja\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\DEV\repos\Loja\Loja\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\DEV\repos\Loja\Loja\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\DEV\repos\Loja\Loja\obj\Debug\net6.0\Loja.sourcelink.json

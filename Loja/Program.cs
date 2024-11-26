@@ -20,6 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //Repositories
 builder.Services.AddTransient<IJogoRepository, JogoRepository>();
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 
 builder.Services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
