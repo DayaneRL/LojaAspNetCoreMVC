@@ -1,6 +1,7 @@
 ﻿using Loja.Models;
 using Loja.Repositories.Interfaces;
 using Loja.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Controllers
@@ -30,6 +31,7 @@ namespace Loja.Controllers
             return View(carrinhoCompraVM);
         }
 
+        [Authorize]
         public RedirectToActionResult AdicionarItemNoCarrinhoCompra(int JogoId)
         {
             var jogoSelecionar = _jogoRepository.Jogos
@@ -43,6 +45,7 @@ namespace Loja.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult RemoverItemDoCarrinho(int JogoId)
         {
             var jogoSelecionar = _jogoRepository.Jogos
