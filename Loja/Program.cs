@@ -1,16 +1,25 @@
+using Loja.Areas.Admin.Services;
 using Loja.Context;
 using Loja.Models;
 using Loja.Repositories;
 using Loja.Repositories.Interfaces;
+using Loja.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
+using ReflectionIT.Mvc.Paging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddPaging(options=>
+{
+    options.ViewName = "Bootstrap4";
+    options.PageParameterName = "pageindex";
+});
 
 //DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -38,6 +47,18 @@ builder.Services.AddTransient<IJogoRepository, JogoRepository>();
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 
+builder.Services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+builder.Services.AddScoped<RelatorioVendasService>();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin",
+        politic =>
+        {
+            politic.RequireRole("Admin");
+        });
+});
+
 builder.Services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
 //session
@@ -60,6 +81,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//CriarPerfisUsuarios(app);
+
 //session
 app.UseSession();
 
@@ -78,6 +101,11 @@ app.UseAuthorization();
 //     defaults: new { controller = "admin" });
 
 app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}"
+    );
+
+app.MapControllerRoute(
     name: "categoriaFiltro",
     pattern: "Jogo/{action}/{categoria?}",
      defaults: new { Controller = "Jogo", action="List" });
@@ -87,3 +115,14 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+void CriarPerfisUsuarios(WebApplication app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<ISeedUserRoleInitial>();
+        service.SeedRoles();
+        service.SeedUsers();
+    }
+}

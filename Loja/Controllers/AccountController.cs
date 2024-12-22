@@ -69,6 +69,8 @@ namespace Loja.Controllers
 
                 if (result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user,"Member");
+
                     await _signInManager.SignInAsync(user, isPersistent: true);
                     return RedirectToAction("Index", "Home");
                     //return RedirectToAction("Login", "Account");
@@ -90,6 +92,11 @@ namespace Loja.Controllers
             HttpContext.User = null;
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

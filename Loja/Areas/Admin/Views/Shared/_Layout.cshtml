@@ -11,29 +11,18 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Loja</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    @await Component.InvokeAsync("CarrinhoCompraResumo")
-                    @await Component.InvokeAsync("CategoriaMenu")
-                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    @* <a class="nav-link text-light" asp-area="" asp-controller="Jogo" asp-action="List">Jogos</a> *@
-                    <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
-                    <form class="navbar-form navbar-right" asp-controller="Jogo" asp-action="Search" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Procurar produto"
-                                   name="searchString" value="@ViewData["searchString"]" />
-                        </div>
-                    </form>
-                    @await Html.PartialAsync("_LoginPartial")
-                    @if(User.IsInRole("Admin"))
-                    {
-                        <a class="nav-link text-light" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
-                    }
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <a class="nav-link text-light" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+                    <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminJogos" asp-action="Index">Produtos</a>
+                    <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminCategorias" asp-action="Index">Categorias</a>
+                    <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminPedidos" asp-action="Index">Pedidos</a>
+                    <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminRelatorioVendas" asp-action="Index">Relatório Vendas</a>
                 </div>
             </div>
         </nav>

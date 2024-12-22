@@ -65,7 +65,7 @@ namespace Loja.Controllers
                 _carrinhoCompra.LimparCarrinho();
 
                 //exibir a view com dados do cliente e pedido
-                return View("~View/Pedido/CheckoutCompleto.cshtml", pedido);
+                return View("~/Views/Pedido/CheckoutCompleto.cshtml", pedido);
             }
 
 

@@ -1,0 +1,116 @@
+﻿@* @model IEnumerable<Loja.Models.Pedido> *@
+@model ReflectionIT.Mvc.Paging.PagingList<Loja.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Pedidos</h3>
+
+<p class="mt-2">
+    <a asp-action="Create">Criar Novo Pedido</a>
+</p>
+
+
+<form method="get" class="form-inline d-flex">
+    <input name="filter" class="form-control me-1" placeholder="filtro"
+     value="@Model.RouteValue["Filter"]" />
+     <button type="submit" class="btn btn-secondary">
+         <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Procurar
+     </button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sobrenome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Complemento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cep)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PedidoEnviado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PedidoEntregueEm)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sobrenome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Complemento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td class="text-truncate">
+                @Html.DisplayFor(modelItem => item.PedidoEnviado)
+            </td>
+            <td class="text-truncate">
+                @Html.DisplayFor(modelItem => item.PedidoEntregueEm)
+            </td>
+            <td class="d-flex flex-column">
+                <a asp-action="Edit" class="btn btn-primary me-1" asp-route-id="@item.Id">Editar</a>
+                <a asp-action="Details" class="btn btn-secondary me-1" asp-route-id="@item.Id">Detalhes</a>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Deletar</a>
+                <a asp-action="PedidoJogos" class="btn btn-info" asp-route-id="@item.Id">Ver Itens</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-between">
+    <span class="fw-bolder">
+    Total de pedidos: @Model.TotalRecordCount
+    </span>
+    <div>
+        <vc:pager paging-list="@Model"></vc:pager>
+    </div>
+</div>
